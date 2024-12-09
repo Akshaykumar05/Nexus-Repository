@@ -83,3 +83,9 @@ A DevOps engineer working on a microservices architecture can use Nexus Reposito
    
 By incorporating Nexus Repository into your DevOps workflow, you gain control over your software supply chain, enhance build efficiency, and improve overall security posture.
 
+-------------------
+* Localhost
+  ```
+  localhost:8081
+  ```
+  
