@@ -88,4 +88,16 @@ By incorporating Nexus Repository into your DevOps workflow, you gain control ov
   ```
   localhost:8081
   ```
-  
+  ![image](https://github.com/user-attachments/assets/15ec27f0-59f1-46ee-a0e9-c049cf512f6d)
+
+* To login use the credentials
+  - Username: admin
+  - Password: you will get by following command
+    ```
+    docker exec -it container_id /bin/bash
+    ```
+    ```
+    cat /nexus-data/admin.password
+    ```
+    
+
