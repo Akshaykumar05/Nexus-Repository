@@ -1,7 +1,6 @@
 # Sonatype Nexus Repository
 This repo contain details about Sonatype Nexus Repository, its local installation and use cases for DevOps methodology.
-
-![image](https://github.com/user-attachments/assets/cb569e6b-633e-44f6-9530-858ee4b86c0d)
+![image](https://github.com/user-attachments/assets/12dbc98d-4295-4cb0-9e15-f7a32e49418a)
 
 
 Sonatype Nexus Repository is a powerful tool for DevOps engineers and organizations practicing DevOps methodologies. It serves as a repository manager that enables teams to store, manage, and distribute software components efficiently throughout the software development lifecycle.
@@ -86,6 +85,12 @@ By incorporating Nexus Repository into your DevOps workflow, you gain control ov
 
 -------------------
 ## LocaL Installation:
+* Pre-requisites:
+  1. Ubuntu 20.04
+  2. Docker
+
+* We'll install nexus using Docker Compose.
+
 * Create a 'nexus' directory inside opt:
   ```
   cd /opt
