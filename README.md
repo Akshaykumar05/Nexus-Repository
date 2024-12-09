@@ -3,6 +3,7 @@ This repo contain details about Sonatype Nexus Repository, its local installatio
 
 ![image](https://github.com/user-attachments/assets/cb569e6b-633e-44f6-9530-858ee4b86c0d)
 
+
 Sonatype Nexus Repository is a powerful tool for DevOps engineers and organizations practicing DevOps methodologies. It serves as a repository manager that enables teams to store, manage, and distribute software components efficiently throughout the software development lifecycle.
 
 ## Key Features of Nexus Repository:
@@ -84,7 +85,34 @@ A DevOps engineer working on a microservices architecture can use Nexus Reposito
 By incorporating Nexus Repository into your DevOps workflow, you gain control over your software supply chain, enhance build efficiency, and improve overall security posture.
 
 -------------------
-* Localhost
+## LocaL Installation:
+* Create a 'nexus' directory inside opt:
+  ```
+  cd /opt
+  ```
+  ```
+  mkdir nexus
+  ```
+* Edit the yml file with following code:
+  ```
+  vim docker-compose.yml
+  ```
+  ```
+  version: "3"
+  services:
+   nexus:
+    image: sonatype/nexus3
+    restart: always
+    volumes:
+      - "nexus-data:/sonatype-work"
+    ports:
+      - "8081:8081"
+      - "8085:8085"
+  volumes:
+    nexus-data: {}
+  ```
+
+* Now open the nexus on browser using localhost/localIP and default port (8081)
   ```
   localhost:8081
   ```
@@ -100,4 +128,16 @@ By incorporating Nexus Repository into your DevOps workflow, you gain control ov
     cat /nexus-data/admin.password
     ```
     
+  ![nexus_pass](https://github.com/user-attachments/assets/dafec889-3afd-4e5f-b4e3-c14a0e90dcd5)
 
+  - After login, we'll get the page
+    ![Nexus_login](https://github.com/user-attachments/assets/994d489f-6d41-4b5c-a883-1845389fdefe)
+
+* Now you can create repository and other task as per your demands.
+
+------------
+--------------
+  
+   
+
+  
